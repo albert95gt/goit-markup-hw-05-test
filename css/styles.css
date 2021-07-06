@@ -553,7 +553,40 @@ img {
    margin-top: var(--primary-margin);
    margin-left: var(--primary-margin)
  }
+ .card-list-thumb{
+   position: relative;
+ }
+ .card-list-thumb::before {
+  position: absolute;
+
+   content: "";
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(33, 150, 243, 0.9);
+   opacity: 0;
+ }
  
+ 
+ .card-list-description {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   /* display: flex;
+   align-items: center; */
+   padding: 63px 24px;
+  
+   font-size: 18px;
+   line-height: 1.56; 
+
+   color: var(--primery-white-colour);
+   opacity: 0;
+ }
+ .card-link:hover .card-list-description {
+   opacity: 1;
+ }
  .card-list-content {
    padding: 20px 24px;
    border: 1px solid #EEEEEE;
