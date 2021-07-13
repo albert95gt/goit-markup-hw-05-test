@@ -443,15 +443,41 @@
           </li>
         </ul>
       </div>
+      <div class="form">
+        <p class="label">Подпишитесь на рассылку</p>
+        <form action="#" class="footer-form">
+          <input type="email" class="email-input" placeholder="E-mail" name="email">
+          <button type="submit" class="button">Подписаться</button>
+        </form>
+      </div>
     </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-icon" width="11" height="11">
             <use href="./images/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
+        <form action="#"class="contact-form">
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="form-label">
+            Имя
+            <input type="text" name="user-name" class="contact-form-input">
+          </label>
+          <label class="contact-form-label">
+            Телефон
+            <input type="tel" name="tel" class="contact-form-input">
+          </label>
+          <label class="contact-form-label">
+            Почта
+            <input type="mail" name="email" class="contact-form-input">
+          </label>
+          <label class="contact-form-label">
+            Комментарий
+            <textarea  name="feedback" class="contact-form-input"></textarea>
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
