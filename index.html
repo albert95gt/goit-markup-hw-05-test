@@ -46,7 +46,7 @@
       <section class="hero">
         <div class="container hero-container">
         <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button></div>
+        <button type="button" class="button" data-modal-open>Заказать услугу</button></div>
       </section>
       <!-- Особенности -->
       <section class="features-section">
@@ -104,36 +104,36 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="our-work-list list">
           <li class="our-work-list-item">
-            <div class="thumb">
+            <div class="our-work-description-wrapper">
             <img
               src="./images/what-are-we-doing/box1.jpg"
               width="370"
               height="294"
               alt="работающий програмист в темном офисе"
             />
-            <p class="thumb-description">Десктопные приложения</p>
+            <p class="our-work-img-desc">Десктопные приложения</p>
           </div>
           </li>
           <li class="our-work-list-item">
-            <div class="thumb">
+            <div class="our-work-description-wrapper">
             <img
               src="./images/what-are-we-doing/box2.jpg"
               width="370"
               height="294"
               alt="веб-дизайнер работает над интерфейсом для мобильных телефонов"
             />
-            <p class="thumb-description">Мобильные приложения</p>
+            <p class="our-work-img-desc">Мобильные приложения</p>
           </div>
           </li>
-          <div class="our-work-list-item">
-            <div class="thumb">
+          <li class="our-work-list-item">
+            <div class="our-work-description-wrapper">
             <img
               src="./images/what-are-we-doing/box3.jpg"
               width="370"
               height="294"
               alt="Творческий художник работает на графическом планшете "
             />
-            <p class="thumb-description">Дизайнерские решения</p>
+            <p class="our-work-img-desc">Дизайнерские решения</p>
           </div>
           </li>
         </ul>
@@ -445,5 +445,15 @@
       </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-icon" width="11" height="11">
+            <use href="./images/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
